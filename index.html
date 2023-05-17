@@ -1,29 +1,24 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title>Untitled1</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta http-equiv="imagetoolbar" content="no">
-    <meta name="generator" content="ActivePresenter"/>
-    <meta name="author" content="Divya Gupta">
-    <meta name="copyright" content=" ()">
-    <meta name="description" content=""/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Popup Modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="openModalBtn" onclick="openModal()">Open Modal</button>
 
-	<link href="player/mediaplayer.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="player/mediaplayer.js"></script>
-</head>
+      <div class="popup">
+        <h1>Modal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores reiciendis porro aperiam qui dolorem? Ab voluptas perspiciatis laborum voluptatem.</p>
+        
+        <button type="button" class="closeModalBtn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
 
-<body>
-<div align="center"><font size="5" color="blue"><strong>Untitled1</strong></font></div>
-
-<div align="center" style="width: 80%; margin: 0 auto;">
-	<video id="video_containter" class="video-js vjs-default-skin vjs-fluid vjs-big-play-centered" controls preload="none" width="1364" height="768" poster="" data-setup="{}" style="background-color:#fff;">
-		<source src="start_clip.mp4" type="video/mp4" />
-		<!--
-		
-		-->
-	</video>
-</div>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
